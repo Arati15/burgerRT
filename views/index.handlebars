@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center" id="top-bar" >
+            <img src="./assets/image/burger.jpg" alt="burger" width="350">
+            <h1>Eat-Da_Burger!</h1>
+        </div>
+
+        <div class="col-sm-6" class="task">
+            <h2>Ready to eat Burger!</h2>
+            <div class="row">
+                <ul>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6" class="task">
+            <h2> devoured!</h2>
+            <div class="row">
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <h2>Add a Burger</h2>
+        <form class="create-form">
+            <div class="col-sm-8 text-center">
+                <div class="form-group">
+                    <label for="new"><strong>Burger:</strong></label>
+                    <input type="text" id="new" name="name">
+                </div>
+
+
+                <button type="submit">Add Burger</button>
+        </form>
+    </div>
+</div>
+</div>
