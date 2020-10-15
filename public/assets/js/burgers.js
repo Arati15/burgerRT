@@ -9,17 +9,17 @@ $(function () {
         };
 
         // Send the PUT request.
-    //     $.ajax("/api/burgers/" + id, {
-    //         type: "PUT",
-    //         data: newDevouredState
-    //     }).then(
-    //         function () {
-    //             console.log("changed devoured to", newDevoured);
+        $.ajax("/api/burgers/" + id, {
+            type: "PUT",
+            data: newDevouredState
+        }).then(
+            function () {
+                console.log("changed devoured to", newDevoured);
                 
-    //             location.reload();
-    //         }
-    //     );
-    // });
+                location.reload();
+            }
+        );
+    });
 
     $(".create-form").on("submit", function (event) {
         // Make sure to preventDefault on a submit event.
