@@ -7,6 +7,9 @@ A full stack application using node.js, express, MySQL, express handlebars and c
 
 Active Link :  https://burgerart2020.herokuapp.com/
 
+
+![GitHub Logo](/media/Burger1.PNG)
+
   
 ## Table of Contents
   
