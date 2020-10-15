@@ -15,11 +15,11 @@ router.get('/', (req, res) => {
     //res.render("index");
 });
   
-//   router.post('/api/burgers', (req, res) => {
-//     burger.create(req.body, result => {
-//         res.json({id: result.insertId})
-//     });
-// });
+  router.post('/api/burgers', (req, res) => {
+    burger.create(req.body, result => {
+        res.json({id: result.insertId})
+    });
+});
 
 //Update
 router.put('/api/burgers/:id', (req,res) => {
